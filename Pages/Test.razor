@@ -1,0 +1,13 @@
+﻿@page "/test"
+
+<h1>Whatsapp xw</h1>
+<p>Welcome</p>
+a
+ <input type="text" @bind="@CurrentValue" @oninput="@((e) => { CurrentValue=(string)e.Value;})" />
+ <br />
+@CurrentValue
+
+@code {
+     private string CurrentValue {get;set;} = "test";
+ 
+}
